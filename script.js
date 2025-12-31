@@ -11,7 +11,7 @@ function countDown(){
 
   // Get today's date and time
    var now = new Date().getTime();
-    if(now<date){
+    if(now>date){
         date="Dec 31,"+year+" 23:59:59";
         document.title="Πρωτοχρονιά";
         document.getElementById("h1").textContent="Πρωτοχρονιά Σε:";
@@ -64,4 +64,5 @@ function XroniaPolla2(){
 	var b=document.getElementById("h1");
 	b.style.color='cyan';
 	}
+
     countDown();
